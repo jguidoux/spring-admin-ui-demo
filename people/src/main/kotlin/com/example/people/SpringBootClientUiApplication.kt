@@ -25,16 +25,16 @@ open class SecurityPermitAllConfig : WebSecurityConfigurerAdapter() {
 	}
 }
 
-data class Message(val id: String?, val text: String)
+data class People(val id: String?, val name: String)
 
 
 @RestController
-@RequestMapping("/message")
+@RequestMapping("/people")
 class MessageResource {
 	@GetMapping
-	fun index(): List<Message> = listOf(
-		Message("1", "Hello!"),
-		Message("2", "Bonjour!"),
-		Message("3", "Privet!"),
+	fun index(): List<People> = listOf(
+		People("1", "jeremie!"),
+		People("2", "karine!"),
+		People("3", "Batman!"),
 	)
 }
