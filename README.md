@@ -10,8 +10,14 @@ the project si composed of 2 projects :
 ## launch the verver
 
 ```
-cd spring.boot.admin.client.url=http://localhost:8080
-./gradlew bootRun
-cd ../spring.boot.admin.client.url=http://localhost:8080
+cd spring-boot-admin-ui
+./gradlew BuildRun
+```
+then go to the url `http://localhost:8080`
+
+## launch the clients
+
+for each project simple launch the same command :
+```
 ./gradlew bootRun
 ```
