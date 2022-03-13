@@ -1,4 +1,4 @@
-package com.example.springbootclientui
+package com.example.people
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
